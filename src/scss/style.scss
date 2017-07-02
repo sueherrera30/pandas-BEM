@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixin';
+@import 'grid';
+
+body{
+	background-color: $colorDurazno;
+}
+
+header{
+	@include headerAndFooter;
+}
+
+.blockImg{
+	@include imagenesPandas;
+}
+.contBotones{
+	@include botones;
+}
+

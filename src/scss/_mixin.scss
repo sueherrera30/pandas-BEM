@@ -1,0 +1,49 @@
+@mixin headerAndFooter {
+	background-color: $colorVerde;
+	height: 40%;
+	font-family: $fuenteCursiva;
+	text-align: $alinearDerecha;
+	font-size: $tamanoTitulo;
+	a {
+		color: $colorBlanco;
+		text-decoration: none;
+		padding: $chico;
+	}
+}
+
+@mixin imagenesPandas {
+	margin-left: $grande;
+	&__elementImg {
+		display: inline;
+		padding: $chico;
+		&--modifierImg {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			border: 15px solid $colorRosa;
+		}
+	}
+}
+
+@mixin botones {
+	text-align: $centrar;
+	display: inline-block;
+	&__btn {
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		background-color: $colorBlanco;
+		display: inline-block;
+		padding-top: $chico;
+		border: solid 5px $colorRosa;
+		margin-left: $chico;
+		&--btnTxt {
+			font-family: $fuenteCursiva;
+			font-size: $tamanoTexto;
+			color: $colorVerde;
+		}
+	}
+	&__btn:hover {
+		background-color: $colorDurazno;
+	}
+}

@@ -16,4 +16,10 @@ header{
 .contBotones{
 	@include botones;
 }
+.contenedorTxt{
+	@include Textos;
+}
 
+footer{
+	@include headerAndFooter;
+}
